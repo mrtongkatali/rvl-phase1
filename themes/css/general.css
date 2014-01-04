@@ -1,0 +1,8 @@
+.hidden {display: none;}
+div.DataTables_sort_wrapper {cursor: pointer;}
+div.ss_table_icons .icon1 {margin-left: 35%;}
+div.ss_table_icons .icon2 {margin-left: 5%;}
+div.ss_table_icons a.icon2:first-child {margin-left: 13%;}
+div.ss_table_icons .icon3 {margin-left: -3%;}
+.table_icon {float:left; margin:0 5px; }
+div.default_loader_topright, div.default_loader_topleft {margin-top:5px;}

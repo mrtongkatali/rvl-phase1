@@ -1,0 +1,76 @@
+Build 1.5.5
+
+ - Added function for computing payslip of Drivers (Honda Only)
+ - Added function for generating payslip per driver (w/ Tax Computation)
+ - Added function for generating bulk payslip (w/ Tax Computation)
+ - BUG FIXED : Removed all static values in pdf
+ - BUG FIXED : Generating multiple documents (payslip) is now working
+ - Revised the honda rates table. Added fields for computing drivers pay
+
+###
+
+Build 1.5.4
+
+ - Added validation on selecting truck. If the delivery type is Special, Only Single trucks will be pulled
+
+Build 1.5.3
+
+ - BUG FIXED : Load capacity of car is not changing even if user is assigning loads for that truck
+ - BUG FIXED : Javascript is throwing error when viewing dr plan
+ - Updated css / icons / templates
+ - Updated the reset function - Include the resetting of truck capacity
+
+Build 1.5.2
+
+ - Revised the address list table. Add the client id
+ - Revised the update dr form. Address list will depends on the client
+ - Revised the delivery type form Standard and Special to Inbound / Outbound / Special
+ - Added new status on truck list : Single / Straight / Trailer
+ - Added new table for Honda
+ - Created new computation class for Honda client only
+ - Added function for computing hauling charges when printing invoice (HONDA Only)
+
+Build 1.5.1
+
+- BUG FIXED : Moved the updating of settings from creating of dr to clearing of dr
+- BUG FIXED : Employee list table doesn't display other data. Pagination is not working
+- Added function for updating computation settings
+- Added new table : rvl_position, rvl_position_rate, rvl_settings_rate
+
+Build 1.5
+
+- Major changes on system engine appliedd
+- Switched on using ActiveRecord instead of using the old datamapper
+- Change the structure of data models from its old directory (models/class) to CI Default Path (Models).
+- Added runActive function that will run sql querries using ActiveRecord
+- Updated CI Framework Version to 2.1.3
+- Added function for mass generating of payslip (static)
+
+Build 6.4.2
+
+- Added function for updating settings in delivery plan
+- Added fields (capacity, total_load, has_epass, epass_tag_serial, class_type) in truck list table
+- Added capacity limit validation for trucks when selecting them on adding dr plans
+
+
+Build 1.4.1.4
+
+- BUG FIXED : Confirmation message after importing does not dissappear after re-loading the table multiple times
+- BUG FIXED : Error on showing the plan list on datatable when navigating to other pages (pagination)
+- BUG FIXED : Driver's delivery transactions must reflect on payroll register after clearing the DR.
+- Added status field in search all dr module
+- Added date of billing field in billing management
+
+
+Build 1.4.1.3
+
+- Issues on delivery address has been resolved. Updated the address database
+- Added function for retrieving cleared dr using Super Admin Account.
+- Issue Resolved : Scanning Cleared DR using appropriate guard account is working
+- Issue Resolved : Invoice can be only generated once. This is according to previous revisions.
+- Issue Resolved : Duplicate Vn list when generated
+- Fix table caption for billing management - Change cleared to pending
+- Added function for searching all DR regardless of status
+- Added function for auto setting weekly date in generating payslip
+
+
